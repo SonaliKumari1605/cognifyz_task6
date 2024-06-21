@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div>
+            <div>
+                <h1>STUDENT REGISTRATON FORM</h1>
+            </div>
+            <div>
+                <form action="">
+                    <table border="2px solid" cellspacing="0" cellpadding="8px" class="regtable">
+                        <tr>
+                            <td>Student Name</td>
+                            <td><input type="text" name="studentname" value="" required id="studentname" class="size"></td>
+                        </tr>
+                        <tr>
+                            <td>Admission No.</td>
+                            <td><input type="text" name="admission" value="" required id="admission" class="size"></td>
+                        </tr>
+                        <tr>
+                            <td>Course Name</td>
+                            <td><select name="course" id="course" required class="size">
+                                <option value="">Select option</option>
+                                <option value="MCA">MCA</option>
+                                <option value="BCA">BCA</option>
+                                <option value="BTech">BTech</option>
+                                <option value="MTech">MTech</option>
+                                <option value="BscIT">Bsc.IT</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td><input type="radio" name="gender" id="male" required>Male
+                            <input type="radio" name="gender" id="female" required >Female</td>
+                        </tr>
+                        <tr>
+                            <td>Subjects</td>
+                            <td><input type="checkbox" name="os" id="os">OS <br>
+                                <input type="checkbox" name="dbms" id="dbms">DBMS <br>
+                                <input type="checkbox" name="java" id="java">Java <br>
+                                <input type="checkbox" name="cpp" id="cpp">CPP <br>
+                                <input type="checkbox" name="awt" id="awt">AWT</td>
+                        </tr>
+                        <tr>
+                            <td>Email Id</td>
+                            <td><input type="email" name="emailid" id="emailid" required class="size"></td>
+                        </tr>
+                        <tr>
+                            <td>Contact No.</td>
+                            <td><input type="tel" name="contactno" id="contactno" required class="size"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><center><button type="submit"value="save" name="submitbtn" id="submitbtn" onclick="return validation()">Submit</button></center></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
